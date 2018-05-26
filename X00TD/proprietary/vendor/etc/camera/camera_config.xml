@@ -137,12 +137,14 @@ LensInfo : Information of the lens present in the module.
     </CSIInfo>
     <LensInfo>
       <!--Huaqin modify for backfill lens parameter by lizihao at 2018/3/12 start-->
+      <!--Huaqin modify for update lens parameter by lizihao at 2018/04/17 start-->
       <FocalLength>3.37</FocalLength>
       <FNumber>2.2</FNumber>
       <TotalFocusDistance>10</TotalFocusDistance>
-      <HorizontalViewAngle>68.0</HorizontalViewAngle>
-      <VerticalViewAngle>53.7</VerticalViewAngle>
+      <HorizontalViewAngle>69.0</HorizontalViewAngle>
+      <VerticalViewAngle>54.4</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
+      <!--Huaqin modify for update lens parameter by lizihao at 2018/04/17 end-->
       <!--Huaqin modify for backfill lens parameter by lizihao at 2018/3/12 end-->
     </LensInfo>
   </CameraModuleConfig>
@@ -152,9 +154,65 @@ LensInfo : Information of the lens present in the module.
     <CameraId>0</CameraId>
     <SensorName>ov13855_holitech_13m</SensorName>
     <ActuatorName>ov13855_holitech_fp5510a</ActuatorName>
-    <!--EepromName>ov13855_holitech_13m_fm24c64d</EepromName-->
+    <!--Huaqin add for add ov13855_13m eeprom by lizihao at 2018/04/17 start-->
+    <EepromName>ov13855_holitech_13m_fm24c64d</EepromName>
+    <!--Huaqin add for add ov13855_13m eeprom by lizihao at 2018/04/17 end-->
     <FlashName>pmic</FlashName>
     <ChromatixName>ov13855_holitech_13m_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <!--Huaqin add for add ov13855_13m lens info by lizihao at 2018/04/17 start-->
+    <LensInfo>
+      <FocalLength>3.46</FocalLength>
+      <FNumber>2.2</FNumber>
+      <TotalFocusDistance>10</TotalFocusDistance>
+      <HorizontalViewAngle>68.0</HorizontalViewAngle>
+      <VerticalViewAngle>53.7</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+    <!--Huaqin add for add ov13855_13m lens info by lizihao at 2018/04/17 end-->
+  </CameraModuleConfig>
+  <!--Huaqin add for second supply camera by lizihao at 2018/03/21 end-->
+  <CameraModuleConfig>
+    <CameraId>0</CameraId>
+    <SensorName>ov16880_qtech_rear</SensorName>
+    <ActuatorName>ov16880_qtech_rear_dw9714a</ActuatorName>
+    <!--EepromName>hi1333_ofilm_13m_fm24c64d</EepromName-->
+    <FlashName>pmic</FlashName>
+    <ChromatixName>ov13855_holitech_13m_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>BACK</Position>
+    <MountAngle>90</MountAngle>
+    <CSIInfo>
+      <CSIDCore>0</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <FocalLength>3.37</FocalLength>
+      <FNumber>2.2</FNumber>
+      <TotalFocusDistance>10</TotalFocusDistance>
+      <HorizontalViewAngle>68.0</HorizontalViewAngle>
+      <VerticalViewAngle>53.7</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+    </LensInfo>
+  </CameraModuleConfig>
+  <!--Huaqin add 16+5M ov16885 by lizihao at 2018/04/27 start-->
+  <CameraModuleConfig>
+    <CameraId>0</CameraId>
+    <SensorName>ov16885_ofilm_16m</SensorName>
+    <ActuatorName>ov16885_ofilm_16m_dw9714v</ActuatorName>
+    <!--EepromName>ov13855_chicony_rear_fm24c64d</EepromName-->
+    <FlashName>pmic</FlashName>
+    <ChromatixName>ov16885_ofilm_16m_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
     <Position>BACK</Position>
     <MountAngle>90</MountAngle>
@@ -173,7 +231,7 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
-  <!--Huaqin add for second supply camera by lizihao at 2018/03/21 end-->
+  <!--Huaqin add 16+5M ov16885 by lizihao at 2018/04/27 end-->
   <CameraModuleConfig>
     <CameraId>1</CameraId>
     <SensorName>ov8856_chicony_front</SensorName>
@@ -225,10 +283,40 @@ LensInfo : Information of the lens present in the module.
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
   </CameraModuleConfig>
+  <!--Huaqin add third supply front camera hi846 tsp by lizihao at 2018/04/10 start-->
+  <CameraModuleConfig>
+    <CameraId>1</CameraId>
+    <SensorName>hi846_tsp_front</SensorName>
+    <EepromName>hi846_tsp_front</EepromName>
+    <FlashName>pmic</FlashName>
+    <ChromatixName>hi846_tsp_front_chromatix</ChromatixName>
+    <ModesSupported>1</ModesSupported>
+    <Position>FRONT</Position>
+    <MountAngle>270</MountAngle>
+    <CSIInfo>
+      <CSIDCore>2</CSIDCore>
+      <LaneMask>0x1F</LaneMask>
+      <LaneAssign>0x4320</LaneAssign>
+      <ComboMode>0</ComboMode>
+    </CSIInfo>
+    <LensInfo>
+      <!--Huaqin modify for backfill lens parameter by lizihao at 2018/04/12 start-->
+      <FocalLength>2.5</FocalLength>
+      <FNumber>2.2</FNumber>
+      <TotalFocusDistance>0.40</TotalFocusDistance>
+      <HorizontalViewAngle>71.6</HorizontalViewAngle>
+      <VerticalViewAngle>56.7</VerticalViewAngle>
+      <MinFocusDistance>0.1</MinFocusDistance>
+      <!--Huaqin modify for backfill lens parameter by lizihao at 2018/04/12 end-->
+    </LensInfo>
+  </CameraModuleConfig>
+  <!--Huaqin add third supply front camera hi846 tsp by lizihao at 2018/04/10 end-->
   <CameraModuleConfig>
     <CameraId>1</CameraId>
     <SensorName>ov16880_qtech_front</SensorName>
-    <!--EepromName>ov8856_chicony_front</EepromName-->
+    <!--Huaqin add ov16880 qtech front eeprom by lizihao at 2018/04/27 start-->
+    <EepromName>ov16880_qtech_front_fm24c64d</EepromName>
+    <!--Huaqin add ov16880 qtech front eeprom by lizihao at 2018/04/27 end-->
     <FlashName>pmic</FlashName>
     <ChromatixName>ov16880_qtech_front_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
@@ -240,21 +328,25 @@ LensInfo : Information of the lens present in the module.
       <LaneAssign>0x4320</LaneAssign>
       <ComboMode>0</ComboMode>
     </CSIInfo>
+    <!--Huaqin backfill 16M front ov16885 lens info by lizihao at 2018/05/07 start-->
     <LensInfo>
-      <FocalLength>2.48</FocalLength>
-      <FNumber>2.2</FNumber>
+      <FocalLength>3.52</FocalLength>
+      <FNumber>2.0</FNumber>
       <TotalFocusDistance>0.40</TotalFocusDistance>
-      <HorizontalViewAngle>72.5</HorizontalViewAngle>
-      <VerticalViewAngle>57.5</VerticalViewAngle>
+      <HorizontalViewAngle>67.0</HorizontalViewAngle>
+      <VerticalViewAngle>52.9</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
+    <!--Huaqin backfill 16M front ov16885 lens info by lizihao at 2018/05/07 end-->
   </CameraModuleConfig>
   <!--Huaqin add for second supply camera by lizihao at 2018/03/21 end-->
   <!--Huaqin change for add hi556_13m by lizihao at 2018/02/11 start-->
   <CameraModuleConfig>
     <CameraId>2</CameraId>
     <SensorName>hi556_holitech_13m</SensorName>
-    <!--EepromName>hi556_holitech_13m</EepromName-->
+    <!--Huaqin add for add hi556_13m eeprom by lizihao at 2018/04/17 start-->
+    <EepromName>hi556_holitech_13m_fm24c64d</EepromName>
+    <!--Huaqin add for add hi556_13m eeprom by lizihao at 2018/04/17 end-->
     <!--FlashName>pmic</FlashName-->
     <ChromatixName>hi556_holitech_13m_chromatix</ChromatixName>
     <ModesSupported>1</ModesSupported>
@@ -266,14 +358,16 @@ LensInfo : Information of the lens present in the module.
       <LaneAssign>0x4320</LaneAssign>
       <ComboMode>0</ComboMode>
     </CSIInfo>
+    <!--Huaqin add for fix hi556_13m lens info by lizihao at 2018/04/17 start-->
     <LensInfo>
       <FocalLength>2.00</FocalLength>
       <FNumber>2.4</FNumber>
       <TotalFocusDistance>0.5</TotalFocusDistance>
-      <HorizontalViewAngle>77.9</HorizontalViewAngle>
-      <VerticalViewAngle>51.0</VerticalViewAngle>
+      <HorizontalViewAngle>66.7</HorizontalViewAngle>
+      <VerticalViewAngle>50.0</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
     </LensInfo>
+    <!--Huaqin add for fix hi556_13m lens info by lizihao at 2018/04/17 end-->
   </CameraModuleConfig>
   <!--Huaqin change for add hi556_13m by lizihao at 2018/02/11 end-->
   <!--Huaqin add for dual camera hi1333 & gc5025 by lizihao at 2018/3/2 start-->
@@ -296,12 +390,14 @@ LensInfo : Information of the lens present in the module.
     </CSIInfo>
     <LensInfo>
       <!--Huaqin modify for backfill lens parameter by lizihao at 2018/3/12 start-->
+      <!--Huaqin add for update gc5025_13m lens info by lizihao at 2018/04/17 start-->
       <FocalLength>2.00</FocalLength>
       <FNumber>2.4</FNumber>
       <TotalFocusDistance>0.5</TotalFocusDistance>
-      <HorizontalViewAngle>66.7</HorizontalViewAngle>
-      <VerticalViewAngle>50.0</VerticalViewAngle>
+      <HorizontalViewAngle>71.8</HorizontalViewAngle>
+      <VerticalViewAngle>56.6</VerticalViewAngle>
       <MinFocusDistance>0.1</MinFocusDistance>
+      <!--Huaqin add for update gc5025_13m lens info by lizihao at 2018/04/17 end-->
       <!--Huaqin modify for backfill lens parameter by lizihao at 2018/3/12 end-->
     </LensInfo>
   </CameraModuleConfig>

@@ -383,6 +383,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/hi1333_ofilm_13m_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hi1333_ofilm_13m_chromatix.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/hi556_holitech_13m_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hi556_holitech_13m_chromatix.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/hi846_kingcome_front_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hi846_kingcome_front_chromatix.xml \
+    vendor/asus/X00TD/proprietary/vendor/etc/camera/hi846_tsp_front_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hi846_tsp_front_chromatix.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/imx214_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx214_chromatix.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/imx230_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx230_chromatix.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/imx230_qc2002_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/imx230_qc2002_chromatix.xml \
@@ -409,6 +410,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/ov13855_holitech_13m_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov13855_holitech_13m_chromatix.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/ov13880_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov13880_chromatix.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/ov16880_qtech_front_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov16880_qtech_front_chromatix.xml \
+    vendor/asus/X00TD/proprietary/vendor/etc/camera/ov16885_ofilm_16m_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov16885_ofilm_16m_chromatix.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/ov2281_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov2281_chromatix.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/ov2680_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov2680_chromatix.xml \
     vendor/asus/X00TD/proprietary/vendor/etc/camera/ov4688_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ov4688_chromatix.xml \
@@ -567,6 +569,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/firmware/cppf.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/cppf.mdt \
     vendor/asus/X00TD/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
     vendor/asus/X00TD/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
+    vendor/asus/X00TD/proprietary/vendor/firmware/libpn553_fw.so:$(TARGET_COPY_OUT_VENDOR)/firmware/libpn553_fw.so \
     vendor/asus/X00TD/proprietary/vendor/firmware/mono.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/mono.cnt \
     vendor/asus/X00TD/proprietary/vendor/firmware/novatek_ts_fw_dj.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw_dj.bin \
     vendor/asus/X00TD/proprietary/vendor/firmware/novatek_ts_fw_txd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_ts_fw_txd.bin \
@@ -693,6 +696,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/lib/libactuator_lc898217xc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_lc898217xc.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libactuator_ov13855_chicony_rear_s2034.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov13855_chicony_rear_s2034.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libactuator_ov13855_holitech_fp5510a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov13855_holitech_fp5510a.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libactuator_ov16880_qtech_rear_dw9714a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov16880_qtech_rear_dw9714a.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libactuator_ov16885_ofilm_16m_dw9714v.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov16885_ofilm_16m_dw9714v.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libactuator_pseudo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_pseudo.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libactuator_rohm_bu64243gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu64243gwz.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
@@ -832,6 +837,31 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_kingcome_front_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_kingcome_front_snapshot.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_kingcome_front_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_kingcome_front_zsl_preview.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_kingcome_front_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_kingcome_front_zsl_video.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_a3_default_preview.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_a3_default_video.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_a3_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_a3_hfr_120.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_a3_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_a3_hfr_60.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_a3_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_a3_hfr_90.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_common.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_cpp_ds_chromatix.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_cpp_hfr_120.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_cpp_hfr_60.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_cpp_hfr_90.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_cpp_liveshot.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_cpp_preview.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_cpp_snapshot.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_cpp_us_chromatix.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_cpp_video.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_default_video.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_hfr_120.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_hfr_60.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_hfr_90.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_liveshot.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_postproc.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_preview.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_snapshot.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_zsl_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_zsl_preview.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_hi846_tsp_front_zsl_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_hi846_tsp_front_zsl_video.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_imx214_4k_preview_lc898122.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_4k_preview_lc898122.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_imx214_4k_video_lc898122.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_4k_video_lc898122.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_imx214_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_common.so \
@@ -1635,6 +1665,32 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16880_qtech_front_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16880_qtech_front_video_full.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16880_qtech_front_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16880_qtech_front_zsl_preview_bu64297.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16880_qtech_front_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16880_qtech_front_zsl_video_bu64297.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_common.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_cpp_ds_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_cpp_ds_chromatix.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_cpp_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_cpp_hfr_120.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_cpp_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_cpp_hfr_60.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_cpp_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_cpp_hfr_90.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_cpp_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_cpp_liveshot.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_cpp_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_cpp_preview.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_cpp_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_cpp_snapshot.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_cpp_us_chromatix.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_cpp_us_chromatix.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_cpp_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_cpp_video.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_cpp_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_cpp_video_full.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_default_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_default_preview_bu64297.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_default_video.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_default_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_default_video_bu64297.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_hfr_120.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_hfr_120_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_hfr_120_bu64297.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_hfr_60.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_hfr_60_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_hfr_60_bu64297.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_hfr_90.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_hfr_90_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_hfr_90_bu64297.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_postproc.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_preview.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_snapshot.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_video_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_video_full.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_zsl_preview_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_zsl_preview_bu64297.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov16885_ofilm_16m_zsl_video_bu64297.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16885_ofilm_16m_zsl_video_bu64297.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov2281_a3_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2281_a3_default_preview.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov2281_a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2281_a3_default_video.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libchromatix_ov2281_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2281_common.so \
@@ -2159,7 +2215,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_hi1333_ofilm_13m.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi1333_ofilm_13m.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_hi1333_ofilm_13m_fm24c64d_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi1333_ofilm_13m_fm24c64d_eeprom.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_hi556_holitech_13m.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi556_holitech_13m.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_hi556_holitech_13m_fm24c64d_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi556_holitech_13m_fm24c64d_eeprom.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_hi846_kingcome_front.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi846_kingcome_front.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_hi846_tsp_front.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi846_tsp_front.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_hi846_tsp_front_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi846_tsp_front_eeprom.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_hvx_add_constant.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hvx_add_constant.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_hvx_grid_sum.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hvx_grid_sum.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
@@ -2240,8 +2299,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov13855_chicony_rear.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov13855_chicony_rear.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov13855_chicony_rear_fm24c64d_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov13855_chicony_rear_fm24c64d_eeprom.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov13855_holitech_13m.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov13855_holitech_13m.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov13855_holitech_13m_fm24c64d_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov13855_holitech_13m_fm24c64d_eeprom.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov13880.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov13880.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov16880_qtech_front.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov16880_qtech_front.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov16880_qtech_front_fm24c64d_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov16880_qtech_front_fm24c64d_eeprom.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov16880_qtech_rear.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov16880_qtech_rear.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov16885_ofilm_16m.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov16885_ofilm_16m.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov2281.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov2281.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov2680.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov2680.so \
     vendor/asus/X00TD/proprietary/vendor/lib/libmmcamera_ov2685.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov2685.so \
