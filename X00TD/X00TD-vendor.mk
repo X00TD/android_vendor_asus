@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
     vendor/asus/X00TD/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/asus/X00TD/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
+    vendor/asus/X00TD/proprietary/framework/WfdCommon.jar:system/framework/WfdCommon.jar \
     vendor/asus/X00TD/proprietary/framework/android.hardware.light-V2.0-java.jar:system/framework/android.hardware.light-V2.0-java.jar \
     vendor/asus/X00TD/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/asus/X00TD/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
@@ -65,6 +66,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
     vendor/asus/X00TD/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
     vendor/asus/X00TD/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
+    vendor/asus/X00TD/proprietary/lib/libavenhancements.so:system/lib/libavenhancements.so \
     vendor/asus/X00TD/proprietary/lib/libchromaflash.so:system/lib/libchromaflash.so \
     vendor/asus/X00TD/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/asus/X00TD/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
@@ -92,13 +94,17 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib/libjni_trueportrait.so:system/lib/libjni_trueportrait.so \
     vendor/asus/X00TD/proprietary/lib/libjni_truescanner_v2.so:system/lib/libjni_truescanner_v2.so \
     vendor/asus/X00TD/proprietary/lib/libjni_ubifocus.so:system/lib/libjni_ubifocus.so \
+    vendor/asus/X00TD/proprietary/lib/liblistenjni.so:system/lib/liblistenjni.so \
+    vendor/asus/X00TD/proprietary/lib/liblistensoundmodel2.so:system/lib/liblistensoundmodel2.so \
     vendor/asus/X00TD/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
     vendor/asus/X00TD/proprietary/lib/libmmcamera_faceproc2.so:system/lib/libmmcamera_faceproc2.so \
     vendor/asus/X00TD/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/asus/X00TD/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/asus/X00TD/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/asus/X00TD/proprietary/lib/liboptizoom.so:system/lib/liboptizoom.so \
+    vendor/asus/X00TD/proprietary/lib/libqct_resampler.so:system/lib/libqct_resampler.so \
     vendor/asus/X00TD/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
+    vendor/asus/X00TD/proprietary/lib/libqti-at.so:system/lib/libqti-at.so \
     vendor/asus/X00TD/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
     vendor/asus/X00TD/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/asus/X00TD/proprietary/lib/libscveBlobDescriptor.so:system/lib/libscveBlobDescriptor.so \
@@ -117,11 +123,17 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/asus/X00TD/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
     vendor/asus/X00TD/proprietary/lib/libsdsprpc_system.so:system/lib/libsdsprpc_system.so \
+    vendor/asus/X00TD/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
+    vendor/asus/X00TD/proprietary/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
     vendor/asus/X00TD/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
     vendor/asus/X00TD/proprietary/lib/libts_detected_face_jni.so:system/lib/libts_detected_face_jni.so \
     vendor/asus/X00TD/proprietary/lib/libts_face_beautify_hal.so:system/lib/libts_face_beautify_hal.so \
     vendor/asus/X00TD/proprietary/lib/libts_face_beautify_jni.so:system/lib/libts_face_beautify_jni.so \
     vendor/asus/X00TD/proprietary/lib/libvendorconn.so:system/lib/libvendorconn.so \
+    vendor/asus/X00TD/proprietary/lib/libvr_amb_engine.so:system/lib/libvr_amb_engine.so \
+    vendor/asus/X00TD/proprietary/lib/libvr_object_engine.so:system/lib/libvr_object_engine.so \
+    vendor/asus/X00TD/proprietary/lib/libvr_sam_wrapper.so:system/lib/libvr_sam_wrapper.so \
+    vendor/asus/X00TD/proprietary/lib/libvraudio.so:system/lib/libvraudio.so \
     vendor/asus/X00TD/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
     vendor/asus/X00TD/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
     vendor/asus/X00TD/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
@@ -139,6 +151,15 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
     vendor/asus/X00TD/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/asus/X00TD/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
+    vendor/asus/X00TD/proprietary/lib/rfsa/adsp/libapps_mem_heap.so:system/lib/rfsa/adsp/libapps_mem_heap.so \
+    vendor/asus/X00TD/proprietary/lib/rfsa/adsp/libdspCV_skel.so:system/lib/rfsa/adsp/libdspCV_skel.so \
+    vendor/asus/X00TD/proprietary/lib/rfsa/adsp/libfastcvadsp.so:system/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/asus/X00TD/proprietary/lib/rfsa/adsp/libfastcvadsp_skel.so:system/lib/rfsa/adsp/libfastcvadsp_skel.so \
+    vendor/asus/X00TD/proprietary/lib/rfsa/adsp/libhvxMathVIO.so:system/lib/rfsa/adsp/libhvxMathVIO.so \
+    vendor/asus/X00TD/proprietary/lib/rfsa/adsp/libqvr_adsp_driver_skel.so:system/lib/rfsa/adsp/libqvr_adsp_driver_skel.so \
+    vendor/asus/X00TD/proprietary/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
+    vendor/asus/X00TD/proprietary/lib/rfsa/adsp/libscveFaceLandmark_skel.so:system/lib/rfsa/adsp/libscveFaceLandmark_skel.so \
+    vendor/asus/X00TD/proprietary/lib/rfsa/adsp/libscveT2T_skel.so:system/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/asus/X00TD/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/asus/X00TD/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/asus/X00TD/proprietary/lib/vendor.qti.esepowermanager@1.0.so:system/lib/vendor.qti.esepowermanager@1.0.so \
@@ -173,6 +194,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
     vendor/asus/X00TD/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
     vendor/asus/X00TD/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
+    vendor/asus/X00TD/proprietary/lib64/libavenhancements.so:system/lib64/libavenhancements.so \
     vendor/asus/X00TD/proprietary/lib64/libchromaflash.so:system/lib64/libchromaflash.so \
     vendor/asus/X00TD/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/asus/X00TD/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
@@ -203,6 +225,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib64/libjni_trueportrait.so:system/lib64/libjni_trueportrait.so \
     vendor/asus/X00TD/proprietary/lib64/libjni_truescanner_v2.so:system/lib64/libjni_truescanner_v2.so \
     vendor/asus/X00TD/proprietary/lib64/libjni_ubifocus.so:system/lib64/libjni_ubifocus.so \
+    vendor/asus/X00TD/proprietary/lib64/liblistenjni.so:system/lib64/liblistenjni.so \
+    vendor/asus/X00TD/proprietary/lib64/liblistensoundmodel2.so:system/lib64/liblistensoundmodel2.so \
     vendor/asus/X00TD/proprietary/lib64/libmmcamera_faceproc.so:system/lib64/libmmcamera_faceproc.so \
     vendor/asus/X00TD/proprietary/lib64/libmmcamera_faceproc2.so:system/lib64/libmmcamera_faceproc2.so \
     vendor/asus/X00TD/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
@@ -210,6 +234,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/asus/X00TD/proprietary/lib64/liboptizoom.so:system/lib64/liboptizoom.so \
     vendor/asus/X00TD/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
+    vendor/asus/X00TD/proprietary/lib64/libqti-at.so:system/lib64/libqti-at.so \
     vendor/asus/X00TD/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
     vendor/asus/X00TD/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/asus/X00TD/proprietary/lib64/libscveBlobDescriptor.so:system/lib64/libscveBlobDescriptor.so \
@@ -228,12 +253,18 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/asus/X00TD/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
     vendor/asus/X00TD/proprietary/lib64/libsdsprpc_system.so:system/lib64/libsdsprpc_system.so \
+    vendor/asus/X00TD/proprietary/lib64/libsensor1.so:system/lib64/libsensor1.so \
+    vendor/asus/X00TD/proprietary/lib64/libsensor_reg.so:system/lib64/libsensor_reg.so \
     vendor/asus/X00TD/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
     vendor/asus/X00TD/proprietary/lib64/libts_detected_face_jni.so:system/lib64/libts_detected_face_jni.so \
     vendor/asus/X00TD/proprietary/lib64/libts_face_beautify_hal.so:system/lib64/libts_face_beautify_hal.so \
     vendor/asus/X00TD/proprietary/lib64/libts_face_beautify_jni.so:system/lib64/libts_face_beautify_jni.so \
     vendor/asus/X00TD/proprietary/lib64/libubifocus.so:system/lib64/libubifocus.so \
     vendor/asus/X00TD/proprietary/lib64/libvendorconn.so:system/lib64/libvendorconn.so \
+    vendor/asus/X00TD/proprietary/lib64/libvr_amb_engine.so:system/lib64/libvr_amb_engine.so \
+    vendor/asus/X00TD/proprietary/lib64/libvr_object_engine.so:system/lib64/libvr_object_engine.so \
+    vendor/asus/X00TD/proprietary/lib64/libvr_sam_wrapper.so:system/lib64/libvr_sam_wrapper.so \
+    vendor/asus/X00TD/proprietary/lib64/libvraudio.so:system/lib64/libvraudio.so \
     vendor/asus/X00TD/proprietary/lib64/libwfdavenhancements.so:system/lib64/libwfdavenhancements.so \
     vendor/asus/X00TD/proprietary/lib64/libwfdcodecv4l2.so:system/lib64/libwfdcodecv4l2.so \
     vendor/asus/X00TD/proprietary/lib64/libwfdcommonutils.so:system/lib64/libwfdcommonutils.so \
