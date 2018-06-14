@@ -31,6 +31,18 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libloc_api_v02
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libloc_api_v02.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libloc_api_v02.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libsdm-disp-vndapis
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libsdm-disp-vndapis.so
@@ -48,17 +60,6 @@ LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libthermalclient.so
 LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libthermalclient.so
 LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libloc_api_v02
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES := proprietary/vendor/lib64/libloc_api_v02.so
-LOCAL_MULTILIB := 64
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
@@ -157,6 +158,18 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.qualcomm.location
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -334,9 +347,109 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := QtiTelephonyServicelibrary
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/QtiTelephonyServicelibrary.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := WfdCommon
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/WfdCommon.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := cneapiclient
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/cneapiclient.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.qti.dpmframework
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/com.qti.dpmframework.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.qti.location.sdk
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/com.qti.location.sdk.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := com.qti.snapdragon.sdk.display
 LOCAL_MODULE_OWNER := asus
 LOCAL_SRC_FILES := proprietary/framework/com.qti.snapdragon.sdk.display.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.quicinc.cne.api-V1.0-java
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/com.quicinc.cne.api-V1.0-java.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.quicinc.cne
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/com.quicinc.cne.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := dpmapi
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/dpmapi.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := embmslibrary
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/embmslibrary.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := izat.xt.srv
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/izat.xt.srv.jar
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
@@ -351,6 +464,37 @@ LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := tcmclient
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/tcmclient.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := vendor.qti.hardware.fingerprint-V1.0-java
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := qti-vzw-ims-internal
+LOCAL_MODULE_OWNER := asus
+LOCAL_SRC_FILES := proprietary/vendor/framework/qti-vzw-ims-internal.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
