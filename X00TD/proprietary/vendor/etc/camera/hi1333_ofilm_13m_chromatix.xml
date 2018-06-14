@@ -97,7 +97,7 @@ special_mode_mask values:
       <ISPPreview>hi1333_ofilm_13m_snapshot</ISPPreview>
       <ISPSnapshot>hi1333_ofilm_13m_snapshot</ISPSnapshot>
       <ISPVideo>hi1333_ofilm_13m_video_full</ISPVideo>
-      <CPPPreview>hi1333_ofilm_13m_cpp_snapshot</CPPPreview>
+      <CPPPreview>hi1333_ofilm_13m_cpp_preview</CPPPreview>
       <CPPSnapshot>hi1333_ofilm_13m_cpp_snapshot</CPPSnapshot>
       <CPPVideo>hi1333_ofilm_13m_cpp_video_full</CPPVideo>
       <CPPLiveshot>hi1333_ofilm_13m_cpp_snapshot</CPPLiveshot>
@@ -108,7 +108,7 @@ special_mode_mask values:
       <ISPPreview>hi1333_ofilm_13m_snapshot</ISPPreview>
       <ISPSnapshot>hi1333_ofilm_13m_snapshot</ISPSnapshot>
       <ISPVideo>hi1333_ofilm_13m_video_full</ISPVideo>
-      <CPPPreview>hi1333_ofilm_13m_cpp_snapshot</CPPPreview>
+      <CPPPreview>hi1333_ofilm_13m_cpp_preview</CPPPreview>
       <CPPSnapshot>hi1333_ofilm_13m_cpp_snapshot</CPPSnapshot>
       <CPPVideo>hi1333_ofilm_13m_cpp_video_full</CPPVideo>
       <CPPLiveshot>hi1333_ofilm_13m_cpp_snapshot</CPPLiveshot>
