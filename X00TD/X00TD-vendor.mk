@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/asus/X00TD/proprietary/bin/fmconfig:system/bin/fmconfig \
+    vendor/asus/X00TD/proprietary/vendor/bin/gatekeeperd:$(TARGET_COPY_OUT_VENDOR)/bin/gatekeeperd \
     vendor/asus/X00TD/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/asus/X00TD/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/asus/X00TD/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
@@ -24,6 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/asus/X00TD/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/asus/X00TD/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/asus/X00TD/proprietary/vendor/etc/init/gatekeeperd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gatekeeperd.rc \
     vendor/asus/X00TD/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/asus/X00TD/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/asus/X00TD/proprietary/etc/permissions/com.nxp.nfc.xml:system/etc/permissions/com.nxp.nfc.xml \
@@ -78,6 +80,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
     vendor/asus/X00TD/proprietary/lib/libdualcameraddm.so:system/lib/libdualcameraddm.so \
     vendor/asus/X00TD/proprietary/lib/libfiltergenerator.so:system/lib/libfiltergenerator.so \
+    vendor/asus/X00TD/proprietary/vendor/lib/libgatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgatekeeper.so \
     vendor/asus/X00TD/proprietary/lib/libhbtpjni.so:system/lib/libhbtpjni.so \
     vendor/asus/X00TD/proprietary/lib/libjni_blurbuster.so:system/lib/libjni_blurbuster.so \
     vendor/asus/X00TD/proprietary/lib/libjni_chromaflash.so:system/lib/libjni_chromaflash.so \
@@ -180,6 +183,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/asus/X00TD/proprietary/lib/vendor.qti.hardware.tui_comm@1.0.so:system/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/asus/X00TD/proprietary/lib/vendor.qti.hardware.vpp@1.1.so:system/lib/vendor.qti.hardware.vpp@1.1.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/android.hardware.gatekeeper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gatekeeper@1.0.so \
     vendor/asus/X00TD/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/asus/X00TD/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/asus/X00TD/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
@@ -209,6 +213,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
     vendor/asus/X00TD/proprietary/lib64/libdualcameraddm.so:system/lib64/libdualcameraddm.so \
     vendor/asus/X00TD/proprietary/lib64/libfiltergenerator.so:system/lib64/libfiltergenerator.so \
+    vendor/asus/X00TD/proprietary/vendor/lib64/libgatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgatekeeper.so \
     vendor/asus/X00TD/proprietary/lib64/libhbtpjni.so:system/lib64/libhbtpjni.so \
     vendor/asus/X00TD/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/asus/X00TD/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
