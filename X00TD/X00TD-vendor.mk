@@ -90,8 +90,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib/libjni_panorama.so:system/lib/libjni_panorama.so \
     vendor/asus/X00TD/proprietary/lib/libjni_seestraight.so:system/lib/libjni_seestraight.so \
     vendor/asus/X00TD/proprietary/lib/libjni_sharpshooter.so:system/lib/libjni_sharpshooter.so \
-    vendor/asus/X00TD/proprietary/lib/libjni_snapcammosaic.so:system/lib/libjni_snapcammosaic.so \
-    vendor/asus/X00TD/proprietary/lib/libjni_snapcamtinyplanet.so:system/lib/libjni_snapcamtinyplanet.so \
     vendor/asus/X00TD/proprietary/lib/libjni_stillmore.so:system/lib/libjni_stillmore.so \
     vendor/asus/X00TD/proprietary/lib/libjni_trackingfocus.so:system/lib/libjni_trackingfocus.so \
     vendor/asus/X00TD/proprietary/lib/libjni_trueportrait.so:system/lib/libjni_trueportrait.so \
@@ -226,8 +224,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib64/libjni_panorama.so:system/lib64/libjni_panorama.so \
     vendor/asus/X00TD/proprietary/lib64/libjni_seestraight.so:system/lib64/libjni_seestraight.so \
     vendor/asus/X00TD/proprietary/lib64/libjni_sharpshooter.so:system/lib64/libjni_sharpshooter.so \
-    vendor/asus/X00TD/proprietary/lib64/libjni_snapcammosaic.so:system/lib64/libjni_snapcammosaic.so \
-    vendor/asus/X00TD/proprietary/lib64/libjni_snapcamtinyplanet.so:system/lib64/libjni_snapcamtinyplanet.so \
     vendor/asus/X00TD/proprietary/lib64/libjni_stillmore.so:system/lib64/libjni_stillmore.so \
     vendor/asus/X00TD/proprietary/lib64/libjni_trackingfocus.so:system/lib64/libjni_trackingfocus.so \
     vendor/asus/X00TD/proprietary/lib64/libjni_trueportrait.so:system/lib64/libjni_trueportrait.so \
