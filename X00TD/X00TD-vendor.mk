@@ -102,6 +102,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib/liblistensoundmodel2.so:system/lib/liblistensoundmodel2.so \
     vendor/asus/X00TD/proprietary/lib/libmmcamera_faceproc.so:system/lib/libmmcamera_faceproc.so \
     vendor/asus/X00TD/proprietary/lib/libmmcamera_faceproc2.so:system/lib/libmmcamera_faceproc2.so \
+    vendor/asus/X00TD/proprietary/lib/libmmi.so:system/lib/libmmi.so \
     vendor/asus/X00TD/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/asus/X00TD/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
     vendor/asus/X00TD/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
@@ -238,6 +239,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/X00TD/proprietary/lib64/liblistensoundmodel2.so:system/lib64/liblistensoundmodel2.so \
     vendor/asus/X00TD/proprietary/lib64/libmmcamera_faceproc.so:system/lib64/libmmcamera_faceproc.so \
     vendor/asus/X00TD/proprietary/lib64/libmmcamera_faceproc2.so:system/lib64/libmmcamera_faceproc2.so \
+    vendor/asus/X00TD/proprietary/lib64/libmmi.so:system/lib64/libmmi.so \
     vendor/asus/X00TD/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/asus/X00TD/proprietary/lib64/libmmparser.so:system/lib64/libmmparser.so \
     vendor/asus/X00TD/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
