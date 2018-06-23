@@ -3033,7 +3033,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libgpustats \
-    libril \
     libsdm-disp-vndapis \
     libthermalclient \
     libloc_api_v02 \
